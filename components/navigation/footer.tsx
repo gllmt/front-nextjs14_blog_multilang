@@ -1,5 +1,5 @@
 import siteConfig from "@/config/site"
-import PaddingContainer from "../layout/Padding-container"
+import PaddingContainer from "../layout/padding-container";
 import Link from 'next/link'
 import SocialLink from "../elements/social-links"
 
