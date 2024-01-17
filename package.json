@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@directus/sdk": "^14.0.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/luxon": "^3.4.1",
+    "html-react-parser": "^5.1.1",
     "lucide-react": "^0.309.0",
     "luxon": "^3.4.4",
     "next": "14.0.4",

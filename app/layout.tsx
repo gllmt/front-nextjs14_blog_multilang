@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} selection:bg-black selection:text-white`}>
         <Navigation />
-        <div className="pt-10">{children}</div>
+        <div className="pt-10 min-h-[calc(100vh-100px)]">{children}</div>
         <Footer />
       </body>
     </html>
