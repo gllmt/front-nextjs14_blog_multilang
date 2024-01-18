@@ -1,15 +1,30 @@
+// 'use client'
 import CTACard from '@/components/elements/cta-card'
 import PostCard from '@/components/post/post-card'
 import PaddingContainer from "@/components/layout/padding-container";
 import Link from 'next/link'
-import { DUMMY_POSTS } from '@/DUMMY_DATA'
+// import { DUMMY_POSTS } from '@/DUMMY_DATA'
 import PostList from '@/components/post/post-lists'
 import directus from '@/lib/directus';
 import { readItems } from '@directus/sdk';
 import { notFound } from 'next/navigation';
 import { Post } from '@/types/collection';
 
+// interface PostProps {
+//   post: Post;
+//   posts: Post[];
+// }
 
+// const typeCorrectedPosts = posts as unknown as {
+//   id: string,
+//   title: string,
+//   description: string,
+//   slug: string,
+//   posts: Post[],
+// };
+
+
+// export default async function Home({posts, post}: PostProps) {
 export default async function Home() {
 
   const getAllPosts = async () => {
@@ -39,14 +54,6 @@ export default async function Home() {
   if (!posts) {
     notFound();
   }
-
-  // const typeCorrectedPosts = posts as unknown as {
-  //   id: string,
-  //   title: string,
-  //   description: string,
-  //   slug: string,
-  //   posts: Post[],
-  // };
 
   return (
     <PaddingContainer>
